@@ -1,43 +1,53 @@
-$beautifulHue: #059dec;
+/*
+    Author: K. Asaph T. Binene
+    Description: All about SASS practice first time while learn html
+    Author Company: KATBIN Entreprise
+*/
+
+/* Variable declaration */
+$myWallOutColor: #1f1f1f;
+$myWritingColor: #f1f1f1;
+$myAnchorColor: #ffffff;
+$myAnchorWallColor: #140883;
 
 body {
-	font-family: Helvetica, sans-serif;
-}
+    background-color: $myWallOutColor;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: $myWritingColor;
 
-a {
-	color: $beautifulHue;
+    a {
+        color: $myAnchorColor;
+    }
 }
 
 @import 'header';
 
 .btn-a {
-	display: inline-block;
-	padding: 15px;
-	margin-right: 10px;
-	border: 1px solid $beautifulHue;
-	border-radius: 7px;
-	font-size: 80%;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid $myAnchorColor;
+    border-radius: 7px;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .btn-b {
-	@extend .btn-a;
-	background-color: lighten($beautifulHue, 45%);
+    @extend .btn-a;
+    background-color: lighten($myAnchorWallColor, 45%);
+}
+.group::before,
+.group::after {
+    content: "";
+    display: table;
 }
 
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-
-.group:after {
-  clear: both;
+.group::after {
+    clear: both;
 }
 
 .group {
-  zoom: 1;
+    zoom: 1;
 }

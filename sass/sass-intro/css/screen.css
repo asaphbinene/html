@@ -1,25 +1,35 @@
+/*
+    Author: K. Asaph T. Binene
+    Description: All about SASS practice first time while learn html
+    Author Company: KATBIN Entreprise
+*/
+/* Variable declaration */
 body {
-  font-family: Helvetica, sans-serif;
+  background-color: #1f1f1f;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f1f1f1;
 }
 
-a {
-  color: #059dec;
+body a {
+  color: #ffffff;
 }
 
 .site-header nav ul {
   padding: 0;
   margin: 0;
 }
+
 .site-header nav li {
   list-style: none;
   float: left;
   margin-right: 10px;
 }
+
 .site-header nav a {
   display: block;
   padding: 10px;
-  background-color: #059dec;
-  color: #FFF;
+  background-color: #140883;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -27,7 +37,7 @@ a {
   display: inline-block;
   padding: 15px;
   margin-right: 10px;
-  border: 1px solid #059dec;
+  border: 1px solid #ffffff;
   border-radius: 7px;
   font-size: 80%;
   font-weight: bold;
@@ -36,20 +46,23 @@ a {
 }
 
 .btn-b {
-  background-color: #d8f1fe;
+  background-color: #867af7;
 }
 
-.group:before, .site-header nav ul:before,
-.group:after,
-.site-header nav ul:after {
+.group::before, .site-header nav ul::before,
+.group::after,
+.site-header nav ul::after {
   content: "";
   display: table;
 }
 
-.group:after, .site-header nav ul:after {
+
+.group::after,
+.site-header nav ul::after {
   clear: both;
 }
 
 .group, .site-header nav ul {
   zoom: 1;
 }
+/*# sourceMappingURL=screen.css.map */
